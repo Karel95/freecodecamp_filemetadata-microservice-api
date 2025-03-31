@@ -1,5 +1,8 @@
 var express = require('express');
 var cors = require('cors');
+var multer = require('multer');
+var upload = multer({ dest: 'uploads/' });
+
 require('dotenv').config()
 
 var app = express();
